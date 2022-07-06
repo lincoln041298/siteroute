@@ -1,0 +1,7 @@
+.navbar {
+    @apply flex justify-between items-center max-w-[1230px] mx-auto min-h-[90px]
+}
+
+.scroll {
+    @apply  fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[22rem] bg-white-opacity duration-500 shadow-md z-10
+}
