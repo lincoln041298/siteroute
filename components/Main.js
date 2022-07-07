@@ -28,10 +28,10 @@ export default function Main({ posts }) {
           ></Image>
         </p>
       </div>
-      <div className="mb-10 flex gap-5">
+      <div className="mb-10 flex justify-between gap-5">
         <form className="flex items-center  flex-[0_0_70%]">
           <input
-            className="px-[15px] py-[20px] border border-r-0 rounded-xl rounded-r-none w-full"
+            className="px-[15px] py-[20px] border border-r-0 rounded-xl rounded-r-none w-full focus:outline-none"
             placeholder="Tìm kiếm bài viết..."
             type="text"
           ></input>
@@ -50,7 +50,7 @@ export default function Main({ posts }) {
         </form>
         <form className="flex items-center">
           <input
-            className="px-[15px] py-[20px] border border-r-0 rounded-xl rounded-r-none w-full"
+            className="px-[15px] py-[20px] border border-r-0 rounded-xl rounded-r-none w-full focus:outline-none"
             placeholder="Đăng ký nhận tin"
             type="text"
           ></input>

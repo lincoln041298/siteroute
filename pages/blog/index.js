@@ -16,11 +16,6 @@ export default function Blog({ posts }) {
         >
           Tất cả
         </button>
-        {
-          posts.map((post)=> (
-            <div key={post.id}>{post.acf.avtq}</div>
-          ))
-        }
       </div>
     </div>
   );
