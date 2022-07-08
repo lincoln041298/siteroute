@@ -9,7 +9,7 @@ function PostList({ posts }) {
           <>
             <div key={post.id}>
               <Link href={`/posts/${post.slug}`} passHref>
-                 Linh nè
+                  
               </Link>
             </div>
           </>

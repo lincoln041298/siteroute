@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="layout-fooer py-[30px] text-white bg-zinc-800">
-      <div className="grid grid-cols-5 gap-x-5 max-w-[1230px] mx-auto">
-        <ul className="col-span-1">
+      <div className="grid grid-cols-6 lg:grid-cols-5 gap-x-5 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto">
+        <ul className="col-span-3 lg:col-span-1">
           <li className="font-medium">Địa chỉ</li>
           <li className="mt-5">
             <p></p>
@@ -25,7 +25,7 @@ export default function Footer() {
             <p className="font-extralight text-sm">1900 2013</p>
           </li>
         </ul>
-        <ul className="col-span-1 mt-11">
+        <ul className="col-span-3 lg:col-span-1 mt-11">
           <li>
             <h4 className="text-sm mb-2">Thanh Hoá</h4>
             <p className="font-extralight text-sm mb-3">
@@ -46,9 +46,9 @@ export default function Footer() {
           </li>
           <li></li>
         </ul>
-        <ul className="col-span-1">
+        <ul className="col-span-2 lg:col-span-1 mt-5 lg:mt-0">
           <li>Các ngành</li>
-          <ul className="font-extralight text-sm mt-5">
+          <ul className="font-extralight text-sm mt-2 lg:mt-5">
             <li className="mb-[7px]">Công nghệ</li>
             <li className="mb-[7px]">Tiếp thị &#38; Quảng cáo</li>
             <li className="mb-[7px]">Logicstics &#38; Vận tải</li>
@@ -58,9 +58,9 @@ export default function Footer() {
             <li className="mb-[7px]">Doanh nghiệp vừa và nhỏ (SME)</li>
           </ul>
         </ul>
-        <ul className="col-span-1">
+        <ul className="col-span-2 lg:col-span-1  mt-5 lg:mt-0">
           <li>Dịch vụ</li>
-          <ul  className="font-extralight text-sm mt-5">
+          <ul  className="font-extralight text-sm mt-2 lg:mt-5">
             <li className="mb-[7px]">Bảo trì và nâng cấp</li>
             <li className="mb-[7px]">Tư vấn &#38; Phát triển phần mềm</li>
             <li className="mb-[7px]">Phát triển ứng dụng di động</li>
@@ -71,7 +71,7 @@ export default function Footer() {
             <li className="mb-[7px]">Phát triển phần mềm tùy chỉnh</li>
           </ul>
         </ul>
-        <ul className="col-span-1">
+        <ul className="col-span-2 lg:col-span-1  mt-5 lg:mt-0">
           <li>Tài nguyên</li>
           <ul className="font-extralight text-sm mt-5">
             <li className="mb-[7px]">Về chúng tôi</li>

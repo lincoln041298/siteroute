@@ -6,12 +6,11 @@ function Post({ post }) {
   return (
     <>
         {
-            // post.map((posts)=> (
-            //     <div key={posts.id}>
-            //         {posts.yoast_head_json.name}
-            //         {posts.yoast_head_json.description}
-            //     </div>
-            // ))
+            post.map((posts)=> (
+                <div key={posts.id}>
+                  12345323794
+                </div>
+            ))
         }
     </>
   );

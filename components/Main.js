@@ -7,11 +7,11 @@ import { useRouter } from "next/router";
 export default function Main({ posts }) {
   const router = useRouter();
   return (
-    <main className="">
-      <div className="flex items-center justify-between">
+    <main>
+      <div className="flex items-center flex-col lg:flex-row justify-between">
         <div className="flex flex-col flex-[0_0_50%]">
-          <h1 className="text-6xl font-bold text-slate-800 mb-6">Blog</h1>
-          <p className="text-lg">
+          <h1 className="text-5xl lg:text-6xl text-center lg:text-left font-semibold lg:font-bold text-slate-800 mb-6">Blog</h1>
+          <p className="text-lg text-center lg:text-left">
             Chúng tôi muốn chia sẻ cái nhìn sâu sắc và kinh nghiệm của mình để
             giúp bạn tìm hiểu thêm về các chuyển đổi kỹ thuật số tuyệt vời. Để
             có thông tin, ý tưởng và thông điệp mạnh mẽ, hãy đọc các bài đăng
@@ -28,7 +28,7 @@ export default function Main({ posts }) {
           ></Image>
         </p>
       </div>
-      <div className="mb-10 flex justify-between gap-5">
+      <div className="mb-10 flex flex-col lg:flex-row justify-between gap-5">
         <form className="flex items-center  flex-[0_0_70%]">
           <input
             className="px-[15px] py-[20px] border border-r-0 rounded-xl rounded-r-none w-full focus:outline-none"
@@ -61,7 +61,6 @@ export default function Main({ posts }) {
           </div>
         </form>
       </div>
-     
     </main>
   );
 }
