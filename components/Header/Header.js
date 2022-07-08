@@ -31,7 +31,7 @@ export default function Headers() {
   }
   return (
     <section>
-      <div className={scrollY >= 30 ? Styles.scroll : Styles.navbar}>
+      <div className={scrollY > 0 ? Styles.scroll : Styles.navbar}>
         <p onClick={() => router.push("/")}>
           <Image src={LogoSVG} width={150} height={47} alt="logo"></Image>
         </p>
@@ -44,7 +44,7 @@ export default function Headers() {
           <ul className="flex items-start lg:items-center cursor-pointer flex-col lg:flex-row z-10 lg:z-0">
             <li className={Styles.major}>
               Ngành
-              <p className="flex items-center font-normal text-lg">
+              <p className="flex items-center font-normal text-lg w-full">
                 <Image src={Arowheader} alt="arowheader"></Image>
               </p>
               <Navdrop />

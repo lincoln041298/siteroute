@@ -1,5 +1,5 @@
 .navbar {
-  @apply flex justify-between items-center sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto min-h-[90px];
+  @apply flex justify-between items-center px-4 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto min-h-[90px];
 }
 
 .dropdown {
@@ -17,7 +17,7 @@
   @apply hidden lg:flex;
 }
 .scroll {
-  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[22rem] bg-white-opacity duration-500 shadow-md z-10;
+  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[10.5rem] sm:gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[22rem] bg-white-opacity duration-500 shadow-md z-10;
 }
 
 .major {
@@ -28,12 +28,12 @@
   @apply absolute hidden flex-col left-20 lg:left-0 top-1 lg:top-8 p-5 bg-black lg:bg-white shadow-lg rounded-lg w-[300px] text-base font-light;
 }
 
-.major:focus .navdrop {
-  @apply flex
-}
-
 .major:hover .navdrop {
   @apply lg:flex;
+}
+
+.major:focus .navdrop {
+  @apply flex
 }
 
 .service {
@@ -44,10 +44,10 @@
   @apply absolute hidden flex-col top-10 p-5 bg-black lg:bg-white shadow-lg rounded-lg w-[300px] text-base font-light;
 }
 
-.service:focus .navdropside {
-  @apply flex;
-}
-
 .service:hover .navdropside {
   @apply lg:flex;
+}
+
+.service:focus-visible .navdropside {
+  @apply flex;
 }

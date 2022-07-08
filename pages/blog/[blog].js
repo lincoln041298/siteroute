@@ -1,14 +1,16 @@
 export default function blog({ posts }) {
   console.log(posts);
   return (
-    <div>
+    <div className="prose lg:prose-xl  sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto">
       {posts.map((post) => (
-        <div
-          key={post.id}
-          dangerouslySetInnerHTML={{
-            __html: (post.content.rendered),
-          }}
-        ></div>
+        <div key={post.id} className="mx-48 my-8">
+          <h1>{post.title.rendered}</h1>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.content.rendered,
+            }}
+          ></div>
+        </div>
       ))}
     </div>
   );

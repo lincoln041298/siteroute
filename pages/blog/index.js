@@ -8,7 +8,7 @@ export default function Blog({ posts, datas }) {
   const router = useRouter();
   console.log(posts.name)
   return (
-    <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto min-h-[90px]">
+    <div className="px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto min-h-[90px]">
       <Main/>
       <div className="mb-10">
         <HeaderNavbar posts={posts}/>
