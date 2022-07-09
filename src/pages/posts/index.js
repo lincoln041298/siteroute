@@ -1,20 +1,10 @@
 import Link from "next/link";
-
 function PostList({ posts }) {
   return (
     <>
-      {posts.map((post) => {
-        console.log(post.yoast_head_json.og_title)
-        return (
-          <>
-            <div key={post.id}>
-              <Link href={`/posts/${post.slug}`} passHref>
-                  
-              </Link>
-            </div>
-          </>
-        );
-      })}
+      {posts &&
+        posts.length > 0 &&
+        posts.map((post) => <div key={post.id}>{post.id}</div>)}
     </>
   );
 }
@@ -24,7 +14,6 @@ export async function getStaticProps() {
     "https://api.gcosoftware.vn/wp-json/wp/v2/posts?search=web&per_page=5&page=1"
   );
   const data = await response.json();
-
   return {
     props: {
       posts: data,

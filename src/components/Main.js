@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Animation from "../public/img/animation.svg";
-import Searchblog from "../public/img/searchblog.png";
+import Animation from "public/img/animation.svg";
+import Searchblog from "public/img/searchblog.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

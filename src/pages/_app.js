@@ -1,7 +1,9 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "src/components/Header/Header";
+import Footer from "src/components/Footer/Footer";
 import Image from "next/image";
-import "../scss/main.scss";
+import "scss/main.scss";
+import "scss/Header.module.scss";
+import "scss/Footer.module.scss"
 function MyApp({ Component, pageProps }) {
   return (
     <main>

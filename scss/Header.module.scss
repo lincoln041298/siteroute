@@ -1,5 +1,5 @@
 .navbar {
-  @apply flex justify-between items-center px-4 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto min-h-[90px];
+  @apply flex justify-between items-center px-4 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1230px] mx-auto min-h-[90px];
 }
 
 .dropdown {
@@ -11,17 +11,17 @@
   }
 }
 .displaydrop {
-  @apply lg:flex;
+  @apply lg:flex px-4 py-2;
 }
 .navlist {
   @apply hidden lg:flex;
 }
 .scroll {
-  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[10.5rem] sm:gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[22rem] bg-white-opacity duration-500 shadow-md z-10;
+  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[20.5rem] sm:gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[6rem] xl:gap-x-[19rem] bg-white-opacity duration-500 shadow-md z-10;
 }
 
 .major {
-  @apply relative flex  lg:flex mr-[41px] font-normal text-lg;
+  @apply relative flex lg:flex mr-[41px] font-normal text-sm1 ml-2 sm:ml-0;
 }
 
 .navdrop {
@@ -37,7 +37,7 @@
 }
 
 .service {
-  @apply relative flex mr-[41px] font-normal text-lg;
+  @apply relative flex mr-[41px] font-normal text-sm1 ml-2 sm:ml-0;
 }
 
 .navdropside {

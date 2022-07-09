@@ -1,8 +1,7 @@
 import { data } from "autoprefixer"
-import User from "../components/User"
+import User from "src/components/User"
 
 function user ({ posts }) {
-    console.log(posts)
     return (
         <>
             {
@@ -22,7 +21,6 @@ function user ({ posts }) {
 export async function getStaticProps() {
     const res = await fetch( "https://api.gcosoftware.vn/wp-json/wp/v2/categories")
     const posts = await res.json()
-
     return {
         props: {
             posts

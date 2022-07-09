@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="layout-fooer py-[30px] text-white bg-zinc-800">
-      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-x-5 px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-x-5 px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1230px] mx-auto">
         <ul className="col-span-3 lg:col-span-1">
           <li className="font-medium">Địa chỉ</li>
           <li className="mt-5">

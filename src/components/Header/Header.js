@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoSVG from "../../public/img/logoGCO/logogco.svg";
-import Arowheader from "../../public/img/arrowheader.svg";
-import Dropdownsvg from "../../public/img/3linesdrop.svg";
+import LogoSVG from "public/img/logoGCO/logogco.svg";
+import Arowheader from "public/img/arrowheader.svg";
+import Dropdownsvg from "public/img/3linesdrop.svg";
 import { useEffect, useState } from "react";
-import Styles from "../../scss/Header.module.scss";
+import Styles from "scss/Header.module.scss";
 import { useRouter } from "next/router";
 import Navdrop from "./Navdrop";
 import NavdropSide from "./Navdropside";
@@ -49,7 +49,7 @@ export default function Headers() {
               </p>
               <Navdrop />
             </li>
-
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
             <li className={Styles.service}>
               Dịch vụ
               <p className="flex items-center">
@@ -57,17 +57,21 @@ export default function Headers() {
               </p>
               <NavdropSide />
             </li>
-
-            <li className="mr-[41px] font-normal text-lg">Dự án</li>
-            <li className="mr-[41px] font-normal text-lg">Về chúng tôi</li>
-            <li className="mr-[41px] font-normal text-lg text-blue-600">
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Dự án</li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className=" font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Về chúng tôi</li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px] text-blue-600">
               <button type="button" onClick={() => router.push("/blog")}>
                 Blog
               </button>
             </li>
-            <li className="mr-[41px] font-normal text-lg">Tuyển dụng</li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Tuyển dụng</li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
           </ul>
-          <button>Liên hệ</button>
+          <button className="px-[25px] py-[7px] bg-blue-600 hover:bg-blue-700 transition delay-150 rounded-lg text-white mx-2.5 sm:mx-0">Liên hệ</button>
         </div>
       </div>
     </section>
