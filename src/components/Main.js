@@ -5,15 +5,18 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 
-export default function Main({ posts }) {
+export default function Main({ setSearchData }) {
   const router = useRouter();
   const [index, setIndex] = useState();
   console.log(index);
   const handleChange = (value) => {
     setIndex(value);
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    const res = await fetch(`https://api.gcosoftware.vn/wp-json/wp/v2/posts?lang=vi&per_page=12&page=1&search=${index}`)
+    const search = await res.json()
+    setSearchData(search)
     router.push(`/blog/?search=${index}`)
   }
   return (

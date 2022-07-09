@@ -9,12 +9,14 @@ import Pagination from "src/components/Pagination/Pagination";
 
 export default function Blog({ posts, datas, page }) {
   const router = useRouter();
+  const [searchData, setSearchData] = useState()
+  
   return (
     <div className="px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1230px] mx-auto min-h-[90px]">
-      <Main />
+      <Main setSearchData={setSearchData}/>
       <div className="mb-10">
         <HeaderNavbar posts={posts} />
-        <BlogList datas={datas} />
+        <BlogList datas={searchData || datas} />
       </div>
       <Pagination posts={posts} page={page}/>  
     </div>
