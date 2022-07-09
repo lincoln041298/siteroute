@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Main from "../components/Main";
+import Main from "src/components/Main";
 
 function All({ posts, datas }) {
   return (

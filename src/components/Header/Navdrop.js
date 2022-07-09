@@ -1,4 +1,4 @@
-import NavdropStyle from "../../scss/Header.module.scss" 
+import NavdropStyle from "scss/Header.module.scss" 
 
 export default function Navdrop() {
     return (
