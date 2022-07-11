@@ -54,7 +54,7 @@ export default function Main({ setSearchData }) {
             onChange={(e) => handleChange(e.target.value)}
           ></input>
           <div className="p-[10px] border border-l-0 rounded-lg rounded-l-none">
-            <button className="bg-blue-600 py-[15px] px-[30px] rounded-xl" onClick={handleSubmit}>
+            <button className="bg-blue-600 py-[15px] lg:py-[10px] px-[30px] rounded-xl" onClick={handleSubmit}>
               
               <p className="flex items-center">
                 <Image
