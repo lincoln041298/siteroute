@@ -17,7 +17,7 @@
   @apply hidden lg:flex;
 }
 .scroll {
-  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[20.5rem] sm:gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[6rem] xl:gap-x-[19rem] bg-white-opacity duration-500 shadow-md z-10;
+  @apply fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[10.5rem] sm:gap-x-[22.5rem] md:gap-x-[32rem] lg:gap-x-[6rem] xl:gap-x-[19rem] bg-white-opacity duration-500 shadow-md z-10;
 }
 
 .major {
