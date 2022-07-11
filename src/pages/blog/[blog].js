@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
+
 export default function blog({ posts }) {
-  console.log(posts);
   return (
     <div className="prose lg:prose-xl  sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto">
       {posts.map((post) => (

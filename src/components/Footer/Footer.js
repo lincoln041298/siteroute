@@ -3,6 +3,7 @@ import Styles from "scss/Footer.modue.scss"
 export default function Footer() {
   return (
     <footer className="layout-fooer py-[30px] text-white bg-zinc-800">
+<<<<<<< HEAD:components/Footer/Footer.js
       <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-x-5 px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1230px] mx-auto">
         <div className="col-span-3 lg:col-span-1 ">
           <ul>
@@ -30,6 +31,32 @@ export default function Footer() {
             </ul>
           </ul>
         </div>
+=======
+      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 gap-x-5 px-5 sm:px-0 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1230px] mx-auto">
+        <ul className="col-span-3 lg:col-span-1">
+          <li className="font-medium">Địa chỉ</li>
+          <li className="mt-5">
+            <p></p>
+            <h4 className="text-sm mb-2">Hà Nội</h4>
+            <p className="font-extralight text-sm mb-3">
+              Tầng 8 tòa nhà Ford, 311 - 313 Trường Chinh, quận Thanh Xuân, Hà
+              Nội
+            </p>
+          </li>
+          <li>
+            <p></p>
+            <h4 className="text-sm mb-2">Đà Nẵng</h4>
+            <p className="font-extralight text-sm">
+              Tầng 12, Vĩnh Trung Plaza, 255 - 257 Hùng Vương, Phường Vĩnh
+              Trung, Quận Thanh Khê, TP Đà Nẵng
+            </p>
+          </li>
+          <li>
+            <h4 className="text-sm mb-2">Điện thoại</h4>
+            <p className="font-extralight text-sm">1900 2013</p>
+          </li>
+        </ul>
+>>>>>>> master:src/components/Footer/Footer.js
         <ul className="col-span-3 lg:col-span-1 mt-11">
           <li>
             <h4 className="text-sm mb-2">Thanh Hoá</h4>

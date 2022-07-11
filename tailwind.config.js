@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "src/pages/**/*.{js,ts,jsx,tsx}",
+    "src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -54,7 +54,11 @@ module.exports = {
         changed6: 'changed .7s ease-in-out forwards',
         changed7: 'changed .8s ease-in-out forwards',
       },
-
+      fontSize: {
+        'sm1': ['16px', {
+          lineHeight: '1.75rem',
+        }],
+      }
     },
   },
   plugins: [
