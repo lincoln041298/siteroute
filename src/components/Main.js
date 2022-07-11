@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Animation from "public/img/animation.svg";
 import Searchblog from "public/img/searchblog.png";
+import RegisterForm from "public/img/registerform.svg"
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext, useState } from "react";
@@ -53,7 +54,7 @@ export default function Main({ setSearchData }) {
             onChange={(e) => handleChange(e.target.value)}
           ></input>
           <div className="p-[10px] border border-l-0 rounded-lg rounded-l-none">
-            <button className="bg-blue-600 py-[10px] px-[30px] rounded-xl" onClick={handleSubmit}>
+            <button className="bg-blue-600 py-[15px] px-[30px] rounded-xl" onClick={handleSubmit}>
               
               <p className="flex items-center">
                 <Image
@@ -74,7 +75,7 @@ export default function Main({ setSearchData }) {
           ></input>
           <div className="p-[10px] border border-l-0 rounded-lg rounded-l-none">
             <button className="bg-blue-600 py-[10px] px-[30px] rounded-xl">
-              O
+              <Image src={RegisterForm} width={100}></Image>
             </button>
           </div>
         </form>

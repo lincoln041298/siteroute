@@ -49,7 +49,7 @@ export default function Headers() {
               </p>
               <Navdrop />
             </li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
             <li className={Styles.service}>
               Dịch vụ
               <p className="flex items-center">
@@ -57,19 +57,19 @@ export default function Headers() {
               </p>
               <NavdropSide />
             </li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
             <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Dự án</li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
             <li className=" font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Về chúng tôi</li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
             <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px] text-blue-600">
               <button type="button" onClick={() => router.push("/blog")}>
                 Blog
               </button>
             </li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
             <li className="font-normal text-lg mx-2 sm:mx-0 sm:mr-[41px]">Tuyển dụng</li>
-            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block sm:hidden"></li>
+            <li className="w-full h-[0.5px] bg-zinc-300 my-2 block lg:hidden"></li>
           </ul>
           <button className="px-[25px] py-[7px] bg-blue-600 hover:bg-blue-700 transition delay-150 rounded-lg text-white mx-2.5 sm:mx-0">Liên hệ</button>
         </div>
